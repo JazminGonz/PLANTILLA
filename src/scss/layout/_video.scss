@@ -1,0 +1,73 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.banner {
+    position:relative;
+    min-height: 70rem;
+    max-height: 90rem;
+    overflow: hidden;
+    border-radius: 1rem;
+    margin: 0 2rem;
+    margin-top: 2rem;
+
+    .banner-slider {
+        position: absolute;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+        inset: 0;
+        gap: 1rem;
+    }
+
+    .banner-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .banner-slider img {
+        object-fit: cover; //depende de la imagen final
+        flex-shrink: 0;
+        border-radius: 1rem;
+    }
+
+    // Responsive: Teléfono
+    @include m.telefono {
+        min-height: 55rem;
+        max-height: 25rem;
+        .banner-slider {
+            gap: 0.5rem;
+            margin-bottom: 0rem; // Si quieres margen en la parte inferior
+
+            img {
+                width: 100%; // Ocupa solo el 80% del contenedor para dejar espacio
+                height: auto; // Mantén la proporción
+            }
+        }
+    }
+
+    // Responsive: Tablet
+    @include m.tablet {
+        .banner-slider {
+            gap: 0.5rem;
+
+            img {
+                width: 100%; // Más ancho en tablet, pero menos que el 100%
+                height: auto;
+            }
+        }
+    }
+
+    // Responsive: Escritorio
+    @include m.desktop {
+        min-height: 55rem;
+        max-height: 90rem;
+        .banner-slider {
+            gap: 1rem;
+
+            img {
+                width: 100%; // Un tamaño fijo en escritorio
+                height: 55rem;
+            }
+        }
+    }
+}
