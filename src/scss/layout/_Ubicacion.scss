@@ -37,6 +37,11 @@
             color: v.$blanco;
             margin: 0;
         }
+        // span{
+        //     font-size: 2rem;
+        //     text-align: center;
+        //     padding: 2rem;
+        // }
     }
     &-header{
         background-color: v.$rosa;
@@ -46,20 +51,23 @@
     }
     &-body{
         background-color: v.$blanco;
-        ul {
-            @include m.resetear-lista;
-
-            li{
-                padding: 2rem;
-                border-bottom: 1px solid #e1e1e1;
-            }
-        }
+        .icon {
+        display: flex;
     }
+    }
+    .mapa {
+        display: flex;
+        padding: 2rem;
+        padding-bottom: 0;
+    
+    }
+    
     &-footer{
         background-color: v.$blanco;
         padding: 3rem;
 
         p{
+            margin-bottom: 20px;
             font-size: 2rem;
             font-weight: 900;
             background-color: v.$morado;
@@ -73,4 +81,24 @@
     }
 
 
+}
+
+.social-media-header {
+    background-color: v.$blanco;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.social-media-icons {
+        color: v.$negro;
+
+    display: grid;
+    /* Crea una cuadrícula de 2 columnas de igual ancho */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+    padding: 20px;
+    /* Centra los ítems de la cuadrícula horizontal y verticalmente */
+    justify-items: center;
+    align-items: center;
 }

@@ -39,7 +39,18 @@
         text-align: center;
         margin-bottom: 2rem;
     }
+    .objetivo{
+    @include m.contenedor;
+        @include m.tablet{
+        }
+            p{
+            text-align: center;
+            font-weight: 700;
+        }
+    }
 }
+
+
 
 .contenido-info{
     margin-top: 7rem;
@@ -53,6 +64,7 @@
     img{
         width: 30rem;
         height: 30rem;
+        
     }
 }
 

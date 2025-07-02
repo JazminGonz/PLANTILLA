@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FESTIVAL DE MUSICA</title>
+    <title>FUNDACION PINITA</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="build/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <div class="contenedor contenido-header">
             <a href="#"><img class="header-logo" src="./src/img/pinita_Logo.png" alt=""></a>
 
-            <nav class="navegacion-principal">
-                <a href="#">Inicio</a>
-                <a href="#">Servicios</a>
-                <a href="#">Equipo</a>
-                <a href="#">Ubicacion</a>
-                <a href="#">Conferencias</a>
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú de navegación">
+                <i class="fas fa-bars"></i> </button>
+                
+            <nav class="navegacion-principal" id="navegacion-principal">
+                <a href="#" class="active">Inicio</a>
+                <a href="#" class="active">Servicios</a>
+                <a href="#" class="active">Equipo</a>
+                <a href="#" class="active">Ubicacion</a>
+                <a href="#" class="active">Conferencias</a>
             </nav>
         </div>
     </header>
@@ -32,9 +36,15 @@
         </div>
         
     </div>
-   
-<section class="sobre-nosotros">
+
+<!-- EQUIPO-->
+
+    <section class="sobre-nosotros">
     <h2>¿Quienes Somos?</h2>
+    <div class="objetivo">
+        <p class="objetivo">Nuestro propósito es generar y aliviar el sufrimiento de niñ@s y adul@s de los hospitales, Casa Hogares, Asilos, Prisiones y Comunidades Marginadas.
+</p>
+    </div>
     <div class="imagen">
         <div class="contenido-info">
             
@@ -45,7 +55,7 @@
                     <img width="300" height="300" loading="lazy" src="build/img/imagen_dj.jpg" alt="">
                 </picture>
                 <p><b>Subtitulo</b></p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates praesentium doloribus earum? Corporis, laudantium nobis? Odio recusandae commodi ullam doloremque tempora itaque et unde provident, ab quam aspernatur voluptatem error.</p>
+                <p>Lorem dolor sit amet consectetur adipisicing elit. Voluptates praesentium doloribus earum? Corporis, laudantium nobis? Odio recusandae commodi ullam doloremque tempora itaque et unde provident, ab quam aspernatur voluptatem error.</p>
             </div>
 
             <div class="info-imagen">
@@ -79,7 +89,7 @@
             </div>
 
             
-         </div>
+        </div>
         <!-- <picture>
             <source srcset="build/img/imagen_dj.avif" type="image/avif" />
             <source srcset="build/img/imagen_dj.webp" type="image/webp" />
@@ -89,118 +99,105 @@
     
 </section>
 
-<!--LINEUP--> 
-<section id="lineup" class="lineup">
-    <h3>Line Up</h3>
+<!--SERVICIOS--> 
+<section id="Servicios" class="Servicios">
+    <h3>Servicios</h3>
 
-    <p class="dia">Viernes 21</p>
+    <p class="dia">¡Un espacio para compartir y crecer juntos!</p>
     <div class="escenarios-contenedor contenedor">
         <div class="escenario bg-amarillo">
-            <p class="nombre-escenario">Techno</p>
+            <p class="nombre-escenario">Alberge</p>
 
             <ul class="calendario">
                 <li>
-                    24:00 | <span>Adam Beyer</span>
+                    Hospedaje temporal para personas en situación vulnerable
                 </li>
                 <li>
-                    22:00 | <span>Carl Cox</span>
+                    Espacios limpios, cómodos y protegidos
                 </li>
                 <li>
-                    20:00 | <span>HI-LO</span>
+                    Atención con respeto, empatía y dignidad
                 </li>
                 <li>
-                    19:00 | <span>Amelie Lens</span>
+                    Apoyo con ropa, artículos de higiene y alimentación
                 </li>
                 <li>
-                    18:00 | <span>CamelPhat</span>
-                </li>
-                <li>
-                    17:00 | <span>ARTBAT</span>
+                    Acompañamiento para canalización a otros servicios
                 </li>
             </ul>
         </div> <!--.escenario-->
 
         <div class="escenario bg-verde">
-            <p class="nombre-escenario">EDM</p>
+            <p class="nombre-escenario">Terapia Fisica</p>
 
             <ul class="calendario">
                 <li>
-                    24:00 | <span>David Guetta</span>
+                    Valoración individual por especialistas
                 </li>
                 <li>
-                    22:00 | <span>Tïesto</span>
+                    Rehabilitación para lesiones o movilidad reducida
                 </li>
                 <li>
-                    20:00 | <span>Martin Garrix</span>
+                    Ejercicios guiados y adaptados a cada necesidad
                 </li>
                 <li>
-                    19:00 | <span>Steve Aoki</span>
+                    Seguimiento personalizado del progreso
                 </li>
                 <li>
-                    18:00 | <span>Afrojack</span>
-                </li>
-                <li>
-                    17:00 | <span>Vintage Culture</span>
+                    Atención con profesionalismo y calidez
                 </li>
             </ul>
         </div> <!--.escenario-->
     </div> <!--.escenarios-contenedor -->
 
 
-    <p class="dia">Sábado 22</p>
     <div class="escenarios-contenedor contenedor">
         <div class="escenario bg-verde">
-            <p class="nombre-escenario">Techno</p>
+            <p class="nombre-escenario">Comedor</p>
 
             <ul class="calendario">
                 <li>
-                    24:00 | <span>Reinier Zonneveld</span>
+                    Alimentos calientes y balanceados
                 </li>
                 <li>
-                    22:00 | <span>Eric Prydz</span>
+                    Atención a personas en situación vulnerable
                 </li>
                 <li>
-                    20:00 | <span>Deadmau5</span>
+                    Ambiente de respeto y solidaridad
                 </li>
                 <li>
-                    19:00 | <span>Joris Voorn</span>
+                    Espacio limpio y seguro para todas las edades
                 </li>
                 <li>
-                    18:00 | <span>Nina Kraviz</span>
-                </li>
-                <li>
-                    17:00 | <span>Argy</span>
+                    Actividades comunitarias que fortalecen la convivencia
                 </li>
             </ul>
         </div> <!--.escenario-->
 
         <div class="escenario bg-amarillo">
-            <p class="nombre-escenario">EDM</p>
+            <p class="nombre-escenario">Psicologo</p>
 
             <ul class="calendario">
                 <li>
-                    24:00 | <span>Armin Van Buuren</span>
+                    Escucha activa y orientación profesional
                 </li>
                 <li>
-                    22:00 | <span>Calvin Harris</span>
+                    Apoyo en momentos de crisis o duelo
                 </li>
                 <li>
-                    20:00 | <span>Hardwell</span>
+                    Herramientas para manejar estrés y ansiedad
                 </li>
                 <li>
-                    19:00 | <span>Above & Beyond</span>
+                    Confidencialidad y respeto siempre garantizados
                 </li>
                 <li>
-                    18:00 | <span>Diplo</span>
-                </li>
-                <li>
-                    17:00 | <span>Steve Angello</span>
+                    Atención a jóvenes, adultos y personas mayores
                 </li>
             </ul>
         </div> <!--.escenario-->
     </div> <!--.escenarios-contenedor -->
 </section>
- 
+
 <section id="galeria" class="galeria">
 
     <h3>Galeria</h3>
@@ -208,43 +205,54 @@
     <div class="galeria-imagenes"></div>
 
 </section>
-<!--.BOLETOS-->
+<!--.UBICACION-->
 
 <section id="boletos" class="contenedor-boletos">
-    <h3>Boletos</h3>
+    <h3>CONTACTANOS</h3>
 
     <div class="boletos">
         <div class="pase">
-            <p class="pase-nombre">Pase 1 Día</p>
+            <p class="pase-nombre">Nuestra Ubicación</p>
             <header class="pase-header">
-                <p>Incluye</p>
+                <p>Direccion</p>
             </header>
             <div class="pase-body">
-                <ul>
-                    <li>Acceso a ambos escenarios</li>
-                    <li>Bebida Ilimitada</li>
-                    <li>Camisa / Pulsera del Evento</li>
-                </ul>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses!2smx!4v1742233492085!5m2!1ses!2smx!6m8!1m7!1s5ySDuM7dgiXydOk_zkpR6A!2m2!1d21.87535292426852!2d-102.2987781233218!3f237.24387822000176!4f8.500553054072128!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
             </div>
             <footer class="pase-footer">
-                <p>$100</p>
+                <P>351 Mariano Matamoros Sur.
+                    Aguascalientes</P>
             </footer>
         </div>
         <div class="pase">
-            <p class="pase-nombre">Pase 2 Días</p>
+            <p class="pase-nombre">En la web</p>
             <header class="pase-header">
-                <p>Incluye</p>
+                <p>Redes Sociales</p>
             </header>
             <div class="pase-body">
-                <ul>
-                    <li>Acceso a ambos escenarios</li>
-                    <li>Bebida Ilimitada</li>
-                    <li>Camisa / Pulsera del Evento</li>
-                    <li>Acceso VIP</li>
-                </ul>
+                <div class="social-media-icons">
+                    <a href="https://www.facebook.com/FundacionPinita/" target="_blank" class="social-icon facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-icon x">
+                    <i class="fab fa-twitter"></i> <span>X</span>
+                    </a>
+                    <a href="#" class="social-icon youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span>Youtube</span>
+                    </a>
+                    <a href="#" class="social-icon whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>Whatsapp</span>
+                    </a>
+                </div>
             </div>
             <footer class="pase-footer">
-                <p>$180</p>
+                <p>Apoyanos</p>
+                <span>Tu apoyo es el primer paso para segui llevando alegria</span>
             </footer>
         </div>
     </div>
@@ -253,6 +261,7 @@
 <footer class="footer">
     <p>Techno & EDM Festival. Todos los derechos reservados</p>
 </footer>
+<script src="main.js"></script>
 <script src="build/js/app.js"></script>
 </body>
 </html>

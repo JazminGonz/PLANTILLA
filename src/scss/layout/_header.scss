@@ -37,16 +37,28 @@ h1{
         flex-direction: row;
 
     }
-}
+        
+    }
+
 
 .header-logo{
     width: 10rem;
 }
 
 a{
-    color: v.$blanco;
+    color: v.$negro;
     font-size: 2rem;
     &:hover{
         color: v.$amarillo;
     }
+}
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 28px; /* Tamaño del icono */
+    color: #333; /* Color del icono */
+    cursor: pointer;
+    display: none; /* Oculto por defecto en pantallas grandes */
+    padding: 5px;
 }

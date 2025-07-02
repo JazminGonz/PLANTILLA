@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -372,7 +373,7 @@ body > section {
 }
 
 .header {
-  background-color: #4CB8B3;
+  background-color: #82e6e1;
   height: 10rem;
   gap: 2rem;
 }
@@ -416,11 +417,21 @@ h1 {
 }
 
 a {
-  color: #FFF;
+  color: #000;
   font-size: 2rem;
 }
 a:hover {
-  color: #FDDA00;
+  color: #96f58d;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 28px; /* Tamaño del icono */
+  color: #333; /* Color del icono */
+  cursor: pointer;
+  display: none; /* Oculto por defecto en pantallas grandes */
+  padding: 5px;
 }
 
 .banner {
@@ -531,6 +542,15 @@ a:hover {
   text-align: center;
   margin-bottom: 2rem;
 }
+.sobre-nosotros .objetivo {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.sobre-nosotros .objetivo p {
+  text-align: center;
+  font-weight: 700;
+}
 
 .contenido-info {
   margin-top: 7rem;
@@ -547,8 +567,8 @@ a:hover {
   height: 30rem;
 }
 
-.lineup {
-  background-color: #F53756;
+.Servicios {
+  background-color: #ec566f;
 }
 
 h3,
@@ -586,6 +606,7 @@ h3,
 }
 
 .calendario {
+  margin-bottom: 20px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -599,17 +620,17 @@ h3,
 }
 
 .bg-amarillo {
-  background-color: #FDDA00;
+  background-color: #96f58d;
 }
 .bg-amarillo li:nth-child(odd) {
-  background-color: rgb(255, 224.7796442688, 36.55);
+  background-color: rgb(165.75, 246.5, 158.1);
 }
 
 .bg-verde {
-  background-color: #4CB8B3;
+  background-color: #82e6e1;
 }
 .bg-verde li:nth-child(odd) {
-  background-color: rgb(102.85, 194.65, 190.4);
+  background-color: rgb(148.75, 233.75, 229.5);
 }
 
 .galeria {
@@ -668,7 +689,7 @@ h3,
 }
 
 .contenedor-boletos {
-  background-color: #4CB8B3;
+  background-color: #82e6e1;
 }
 .contenedor-boletos h3 {
   color: #FFF;
@@ -707,7 +728,7 @@ h3,
   margin: 0;
 }
 .pase-header {
-  background-color: #F53756;
+  background-color: #ec566f;
   text-transform: uppercase;
   font-size: 2.2rem;
   padding: 1rem 0;
@@ -715,20 +736,20 @@ h3,
 .pase-body {
   background-color: #FFF;
 }
-.pase-body ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.pase-body .icon {
+  display: flex;
 }
-.pase-body ul li {
+.pase .mapa {
+  display: flex;
   padding: 2rem;
-  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 0;
 }
 .pase-footer {
   background-color: #FFF;
   padding: 3rem;
 }
 .pase-footer p {
+  margin-bottom: 20px;
   font-size: 2rem;
   font-weight: 900;
   background-color: #752F97;
@@ -740,8 +761,28 @@ h3,
   background-color: rgb(56.7272727273, 22.7878787879, 73.2121212121);
 }
 
+.social-media-header {
+  background-color: #FFF;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.social-media-icons {
+  color: #000;
+  display: grid;
+  /* Crea una cuadrícula de 2 columnas de igual ancho */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px; /* Espacio entre los elementos de la cuadrícula */
+  padding: 20px;
+  /* Centra los ítems de la cuadrícula horizontal y verticalmente */
+  justify-items: center;
+  align-items: center;
+}
+
 .footer {
-  background-color: #F53756;
+  background-color: #ec566f;
   padding: 2rem 0;
 }
 .footer p {
