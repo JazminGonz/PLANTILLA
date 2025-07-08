@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+#BtnSubir {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+  font-size: 18px;
+  padding: 10px 15px;
+  background-color: #f37373;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(233, 88, 88, 0.3);
+  transition: opacity 0.3s ease-in-out;
+
+
+  &:hover {
+    background-color: #555;
+  }
+}

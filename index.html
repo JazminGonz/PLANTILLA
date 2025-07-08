@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="inicSec">
         <div class="contenedor contenido-header">
             <a href="#"><img class="header-logo" src="./src/img/pinita_Logo.png" alt=""></a>
 
@@ -19,10 +19,10 @@
                 <i class="fas fa-bars"></i> </button>
                 
             <nav class="navegacion-principal" id="navegacion-principal">
-                <a href="#" class="active">Inicio</a>
-                <a href="#" class="active">Servicios</a>
-                <a href="#" class="active">Equipo</a>
-                <a href="#" class="active">Ubicacion</a>
+                <a href="#inicSec" class="active">Inicio</a>
+                <a href="#equipoSec" class="active">Equipo</a>
+                <a href="#Servicios" class="active">Servicios</a>
+                <a href="#ubic" class="active">Ubicacion</a>
                 <a href="#" class="active">Conferencias</a>
             </nav>
         </div>
@@ -39,7 +39,7 @@
 
 <!-- EQUIPO-->
 
-    <section class="sobre-nosotros">
+    <section class="sobre-nosotros" id="equipoSec">
     <h2>¿Quienes Somos?</h2>
     <div class="objetivo">
         <p class="objetivo">Nuestro propósito es generar y aliviar el sufrimiento de niñ@s y adul@s de los hospitales, Casa Hogares, Asilos, Prisiones y Comunidades Marginadas.
@@ -207,7 +207,7 @@
 </section>
 <!--.UBICACION-->
 
-<section id="boletos" class="contenedor-boletos">
+<section id="ubic" class="contenedor-boletos">
     <h3>CONTACTANOS</h3>
 
     <div class="boletos">
@@ -256,6 +256,7 @@
             </footer>
         </div>
     </div>
+   
 </section>
 
 <footer class="footer">
@@ -263,5 +264,9 @@
 </footer>
 <script src="main.js"></script>
 <script src="build/js/app.js"></script>
+ 
+<div class="contenedor_btnSubir">
+    <button id="BtnSubir" class="Btn_Subir">↑</button>
+</div>
 </body>
 </html>
